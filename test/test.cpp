@@ -1,15 +1,15 @@
-#include "../src/hello.hpp"
+#include "../src/witaj.hpp"
 #include <vector>
 #include <iomanip>
 #include <iostream>
 int main() {
 std::vector<std::string> tests = {"", "A", "Bb", "Ccc"};
 for (auto test : tests) {
-if (hello(test).find("Hello") == std::string::npos) {
-std::cerr << "FAIL: missing \"Hello\"" << std::endl;
+if (imie(test).find("Witaj") == std::string::npos) {
+std::cerr << "FAIL: missing \"Witaj\"" << std::endl;
 return 1;
 }
-if (hello(test).find(test) == std::string::npos) {
+if (imie(test).find(test) == std::string::npos) {
 std::cerr << "FAIL: missing name \"" << test << "\"" << std::endl;
 return 1;
 }
