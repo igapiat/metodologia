@@ -8,7 +8,7 @@ int main()
 {
   string imie;
 
-	cout << "Podaj imie: ";
+	cout << "Wpisz swoje imie: ";
 	cin >> imie;
 	
 	cout << "Witaj " << imie << " " << "!\n";
